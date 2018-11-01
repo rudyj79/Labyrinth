@@ -22,4 +22,7 @@ public class FootStepsScript : MonoBehaviour {
             footStep.Play();
         }
 	}
+
+// Ryan is cooler
+
 }
