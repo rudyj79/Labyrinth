@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{CBEE44B2-AC02-2D81-086E-310C52B2BE1D}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Mello's_Code/EntranceDoor/EntranceDoorScript.cs">
+    <Files>
+      <File FileName="Assets/Mello's_Code/PowerUps/PowerUpsDisplay.cs" Line="92" Column="6" />
+      <File FileName="Assets/MinotaurMaze/PowerUps/Hermes.cs" Line="6" Column="33" />
+      <File FileName="Assets/Mello's_Code/PowerUps/Artemis.cs" Line="14" Column="43" />
+      <File FileName="Assets/Mello's_Code/PlayerMovement/PlayerMovement.cs" Line="10" Column="1" />
+      <File FileName="Assets/Mello's_Code/StaminaBar/StaminaBarScript.cs" Line="11" Column="39" />
+      <File FileName="Assets/Mello's_Code/EntranceDoor/EntranceDoorScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MinotaurController.cs" Line="20" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
