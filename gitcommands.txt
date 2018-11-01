@@ -1,3 +1,5 @@
+*Must be within repo folder to make any changes with git*
+
 Git commands for use
 
 Git status 
