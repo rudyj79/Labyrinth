@@ -1,3 +1,0 @@
-examplefile.txt
-
-test

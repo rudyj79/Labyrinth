@@ -22,4 +22,5 @@ public class FootStepsScript : MonoBehaviour {
             footStep.Play();
         }
 	}
+
 }
