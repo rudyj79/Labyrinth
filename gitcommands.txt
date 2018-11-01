@@ -2,6 +2,10 @@
 
 Git commands for use
 
+**git pull often, before or after any of these commands. Pulls all changes since the last time you pushed.**
+
+Just type ~git~ (without ~)to see all commands that can be used with git keyword
+
 Git status 
 
 Git add .
