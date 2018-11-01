@@ -1,0 +1,13 @@
+Git commands for use
+
+Git status 
+
+Git add .
+
+Git pull
+
+Git commit -m "enter comment"
+
+optional:(Git pull)
+
+Git push

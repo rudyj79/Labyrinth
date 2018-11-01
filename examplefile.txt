@@ -1,7 +1,0 @@
-examplefile.txt
-
-test
-
-Test 2
-
-Test 3 from Mello
