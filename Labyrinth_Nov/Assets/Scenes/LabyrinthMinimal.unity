@@ -821,12 +821,9 @@ GameObject:
   - component: {fileID: 179371277}
   - component: {fileID: 179371276}
   - component: {fileID: 179371275}
-  - component: {fileID: 179371272}
-  - component: {fileID: 179371271}
   - component: {fileID: 179371274}
   - component: {fileID: 179371273}
-  - component: {fileID: 179371282}
-  - component: {fileID: 179371281}
+  - component: {fileID: 179371271}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -837,112 +834,18 @@ GameObject:
 --- !u!114 &179371271
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114455345445188328, guid: 112eb234d56da4d48a5bd3a600142d22,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 179371270}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0c074245e8e14f57b43a7f7c3935a82, type: 3}
+  m_Script: {fileID: 11500000, guid: dcef44588674241059cbd2c1a970ba80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  footStep: {fileID: 0}
---- !u!82 &179371272
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 82748432016176708, guid: 112eb234d56da4d48a5bd3a600142d22,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 179371270}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 994ee7adae3144bc5aeee979320e2608, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  powerName: 
+  trapText: {fileID: 436755648}
+  trapPrefab: {fileID: 1898658105692646, guid: 80fd14c75caf14849911e795eeefb0c1, type: 2}
+  player: {fileID: 179371274}
 --- !u!114 &179371273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,13 +858,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d680f07600c84ddbbe1f9d058e9b889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charController: {fileID: 0}
   speed: 9.5
   hermesSpeed: 0
   stamina: 100
   sprintSpeed: 15
   gravity: -9.8
   jumpSpeed: 250
+  charController: {fileID: 0}
   staminaBar: {fileID: 73706500}
 --- !u!114 &179371274
 MonoBehaviour:
@@ -975,13 +878,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efd9f9b2aec884aa09d68b98e4cb50a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charController: {fileID: 0}
   speed: 9
   hermesSpeed: 0
   stamina: 100
   sprintSpeed: 10
   gravity: -9.8
   jumpSpeed: 250
+  charController: {fileID: 0}
 --- !u!114 &179371275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1090,32 +993,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 89.4, z: 0}
---- !u!114 &179371281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 179371270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2f8fa82afdcf4a0caf9eb3bcafd57b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  powerName: 
-  trapText: {fileID: 436755648}
-  trapPrefab: {fileID: 1898658105692646, guid: 80fd14c75caf14849911e795eeefb0c1, type: 2}
---- !u!114 &179371282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 179371270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03cccf22f1a9a4e5fa214f0e77e3dd1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  powerName: 
 --- !u!4 &182475482 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 483822, guid: c3240ae6fba96a4499f6ee5c32ed942d,
@@ -4632,6 +4509,7 @@ GameObject:
   - component: {fileID: 856135091}
   - component: {fileID: 856135090}
   - component: {fileID: 856135089}
+  - component: {fileID: 856135092}
   m_Layer: 5
   m_Name: HermesDisplay
   m_TagString: BackWall
@@ -4764,15 +4642,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cac1600c70ee4e219fb6d66600502dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myText: {fileID: 0}
-  powerUp: {fileID: 1525177386}
-  door: {fileID: 480791069}
-  fadeTime: 10
-  player: {fileID: 179371280}
-  display: {fileID: 856135085}
-  MinController: {fileID: 2120940427}
-  moveObject: {fileID: 179371274}
-  artmeis: {fileID: 200450643}
 --- !u!222 &856135091
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4780,6 +4649,26 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 856135084}
   m_CullTransparentMesh: 0
+--- !u!114 &856135092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 856135084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ef6304e1e7a4905998375a03803d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myText: {fileID: 0}
+  powerUp: {fileID: 1525177386}
+  door: {fileID: 480791069}
+  fadeTime: 10
+  player: {fileID: 179371280}
+  display: {fileID: 856135085}
+  MinController: {fileID: 2120940427}
+  artmeis: {fileID: 200450643}
+  power: {fileID: 179371271}
 --- !u!4 &863117131 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 483822, guid: c3240ae6fba96a4499f6ee5c32ed942d,
@@ -6750,6 +6639,7 @@ GameObject:
   - component: {fileID: 1346560239}
   - component: {fileID: 1346560238}
   - component: {fileID: 1346560237}
+  - component: {fileID: 1346560240}
   m_Layer: 5
   m_Name: ArtemisDisplay
   m_TagString: BackWall
@@ -6847,15 +6737,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822fed15d39f34deca32e52d8f89a1da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myText: {fileID: 0}
-  powerUp: {fileID: 200450643}
-  door: {fileID: 480791069}
-  fadeTime: 10
-  player: {fileID: 179371280}
-  display: {fileID: 1346560236}
-  MinController: {fileID: 2120940427}
-  hermes: {fileID: 1525177386}
-  power: {fileID: 179371281}
 --- !u!114 &1346560238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6898,6 +6779,26 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1346560232}
   m_CullTransparentMesh: 0
+--- !u!114 &1346560240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1346560232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 963c725c6f03f46d293d30c33496e613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myText: {fileID: 0}
+  powerUp: {fileID: 200450643}
+  door: {fileID: 480791069}
+  fadeTime: 10
+  player: {fileID: 179371280}
+  display: {fileID: 1346560236}
+  MinController: {fileID: 2120940427}
+  hermes: {fileID: 1525177386}
+  power: {fileID: 179371271}
 --- !u!1 &1364473592
 GameObject:
   m_ObjectHideFlags: 0
