@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EntranceDoorScript : MonoBehaviour {
-
-// Comment test
     
     private bool openSesame;
 	// Use this for initialization
