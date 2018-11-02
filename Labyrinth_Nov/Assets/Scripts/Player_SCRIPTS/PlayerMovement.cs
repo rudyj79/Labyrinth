@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PlayerMovement : Player
+public class PlayerMovement : MonoBehaviour
 {
     public float speed = 0f;
     public float hermesSpeed = 0f;
@@ -16,8 +16,21 @@ public class PlayerMovement : Player
     public float jumpSpeed = 150f;
     float deltaX;
     float deltaZ;
+    public CharacterController charController;
 
-    public override void MovePlayer(){
+    // Use this for initialization
+    void Start()
+    {
+        charController = GetComponent<CharacterController>();
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    private void Update()
+    {
+        MovePlayer();
+    }
+
+    public void MovePlayer(){
         ModifyStamina();
         if (charController.isGrounded)
         {
@@ -34,7 +47,6 @@ public class PlayerMovement : Player
             else { speed = baseSpeed + hermesSpeed; }
         }
         else { vertSpeed += gravity; }
-        //Debug.Log(speed);
         deltaX = Input.GetAxis("Horizontal") * speed;
         deltaZ = Input.GetAxis("Vertical") * speed;
         Vector3 movement = new Vector3(deltaX, vertSpeed, deltaZ);
