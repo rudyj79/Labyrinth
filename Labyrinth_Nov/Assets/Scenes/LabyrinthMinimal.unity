@@ -2654,6 +2654,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 505214979}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &517521908 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 182670, guid: 8379c3177c4516a48a6c65e894b2eab7,
+    type: 2}
+  m_PrefabInternal: {fileID: 903859162}
+--- !u!136 &517521912
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 517521908}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.2
+  m_Height: 8
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &519105091
 Prefab:
   m_ObjectHideFlags: 0
@@ -4222,7 +4240,7 @@ MonoBehaviour:
   fadeTime: 10
   player: {fileID: 179371280}
   display: {fileID: 856135085}
-  MinController: {fileID: 2120940427}
+  MinController: {fileID: 903859163}
   artmeis: {fileID: 200450643}
   power: {fileID: 179371271}
 --- !u!4 &863117131 stripped
@@ -4651,9 +4669,20 @@ Prefab:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 114055176364856566, guid: 8379c3177c4516a48a6c65e894b2eab7,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 179371270}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8379c3177c4516a48a6c65e894b2eab7, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &903859163 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114055176364856566, guid: 8379c3177c4516a48a6c65e894b2eab7,
+    type: 2}
+  m_PrefabInternal: {fileID: 903859162}
+  m_Script: {fileID: 11500000, guid: 1021d41dd7d4545ada52cbde807a528c, type: 3}
 --- !u!1001 &913679399
 Prefab:
   m_ObjectHideFlags: 0
@@ -6512,7 +6541,7 @@ MonoBehaviour:
   fadeTime: 10
   player: {fileID: 179371280}
   display: {fileID: 1346560236}
-  MinController: {fileID: 2120940427}
+  MinController: {fileID: 903859163}
   hermes: {fileID: 1525177386}
   power: {fileID: 179371271}
 --- !u!1 &1364473592
@@ -7657,7 +7686,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.33333334
+  m_VoxelSize: 4.03
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: 5a1dda4b92b5d41d5abab27c62964397, type: 2}
 --- !u!4 &1739529144
@@ -8562,7 +8591,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2120940427
 MonoBehaviour:
   m_ObjectHideFlags: 0

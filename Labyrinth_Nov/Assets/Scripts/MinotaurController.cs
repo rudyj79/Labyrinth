@@ -10,12 +10,20 @@ public class MinotaurController : MonoBehaviour{
     public GameObject player; // reference for the player object
     private bool startMoving = false;
     private bool bang;
+    static Animator anim;
+    private static Random ran;
+
+    void Start() {
+        anim = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
     {
         if (startMoving)
         {
+            anim.SetBool("isIdle", false);
+            anim.SetBool("isRunning", true);
             agent.SetDestination(player.transform.position);
         }
     }
@@ -29,7 +37,14 @@ public class MinotaurController : MonoBehaviour{
     {
         if (other.tag == "Player")
         {
+            anim.SetBool("isRunning", false);
+            anim.SetBool("isIdle", false);
+            anim.SetBool("isAttacking2", true);
+            Debug.Log("player touched");
             SceneManager.LoadScene("GameOverScreen", LoadSceneMode.Single);
+        } else {
+            anim.SetBool("isAttacking2", false);
+            anim.SetBool("isRunning", true);
         }
         if (other.tag == "spikes")
         {
